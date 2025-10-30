@@ -8,10 +8,8 @@ buses = [
     {"id": 3, "route": "Trichy → Chennai", "time": "06:00 PM", "fare": 600},
 ]
 
-
 bookings = []
 
- 
 html_template = """
 <!DOCTYPE html>
 <html lang="en">
@@ -23,12 +21,12 @@ html_template = """
         h1, h2 { color: #333; }
         table { border-collapse: collapse; width: 100%; margin-top: 20px; background: white; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
-        th { background-color: #4CAF50; color: white; }
+        th { background-color: #007BFF; color: white; }
         tr:hover { background-color: #f1f1f1; }
         form { margin-top: 20px; background: white; padding: 21px; border-radius: 8px; }
         input, select, button { padding: 10px; margin: 5px; }
-        button { background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background-color: #45a049; }
+        button { background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
         .container { max-width: 800px; margin: auto; }
     </style>
 </head>
@@ -103,4 +101,3 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
